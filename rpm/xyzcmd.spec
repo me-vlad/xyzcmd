@@ -2,12 +2,9 @@
 
 Summary:	XYZCommander is a pure console visual file manager
 Name:		xyzcmd
-Version:	0.0.5
-Release:	3%{?dist}
+Version:	0.0.6
+Release:	1%{?dist}
 Source0:	http://xyzcmd.googlecode.com/files/%{name}-%{version}.tar.bz2
-Source1:	xyzcmd_ru.mo
-Source2:	xyzcmd_uk.mo
-Patch0:     xyzcmd-0.0.5-locale.patch     
 License:	LGPL
 Group:		System Environment/Shells
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
@@ -21,7 +18,6 @@ XYZCommander is a pure console visual file manager.
 
 %prep
 %setup -q
-%patch0 -p1 -b .locale
 
 %build
 %{__python} setup.py build
@@ -34,11 +30,6 @@ XYZCommander is a pure console visual file manager.
 %{__rm} -f %{buildroot}%{_datadir}/%{name}/locale/xyzcmd.pot
 %{__rm} -f %{buildroot}%{_datadir}/%{name}/locale/ru/LC_MESSAGES/xyzcmd.po*
 %{__rm} -f %{buildroot}%{_datadir}/%{name}/locale/uk/LC_MESSAGES/xyzcmd.po*
-# temporary workaround (until locale will be fixed in upstream)
-%{__rm} -f %{buildroot}%{_datadir}/%{name}/locale/ru/LC_MESSAGES/xyzcmd.mo
-%{__install} -p -m 0644 %{SOURCE1} %{buildroot}%{_datadir}/%{name}/locale/ru/LC_MESSAGES/xyzcmd.mo
-%{__install} -p -m 0644 %{SOURCE2} %{buildroot}%{_datadir}/%{name}/locale/uk/LC_MESSAGES/xyzcmd.mo
-
 
 %clean
 %{__rm} -rf %{buildroot}
@@ -52,10 +43,10 @@ XYZCommander is a pure console visual file manager.
 %{_bindir}/xyzcmd
 %{python_sitelib}/libxyz/
 %if 0%{?fedora} >= 14
-%{python_sitelib}/xyzcmd-0.0.5-py2.7.egg-info
+%{python_sitelib}/xyzcmd-0.0.6-py2.7.egg-info
 %endif
 %if 0%{?fedora} == 13 || 0%{?rhel} >= 6
-%{python_sitelib}/xyzcmd-0.0.5-py2.6.egg-info
+%{python_sitelib}/xyzcmd-0.0.6-py2.6.egg-info
 %endif
 %dir %{_datadir}/%{name}/conf
 %{_datadir}/%{name}/conf/*.xyz
@@ -66,6 +57,10 @@ XYZCommander is a pure console visual file manager.
 %{_mandir}/man1/xyzcmd.1.gz
 
 %changelog
+* Mon Feb 21 2011 Vlad V. Teterya <vlad@server-labs.com.ua> - 0.0.6-1
+- Remove ugly locale workaround
+- Upgrade to 0.0.6
+
 * Sun Jan 23 2011 Vlad V. Teterya <vlad@server-labs.com.ua> - 0.0.5-3
 - Add ukrainian locale
 - Fix typos in russian locale

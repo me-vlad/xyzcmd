@@ -1,11 +1,13 @@
 #!/bin/sh
 
-find . -name \*.py -or -name \*.xyz | xargs pygettext -o ./locale/xyzcmd.pot
+PATH="/usr/bin:/usr/sbin:/bin:/sbin:/usr/local/bin:$HOME/bin"
 
-chdir ./locale
+find . -name \*.py -or -name \*.xyz | xargs pygettext.py -o ./locale/xyzcmd.pot
 
-for po in `find . -maxdepth 1 -type d | egrep -v "^\.$"`; do
-    b=$(basename $po)
+cd ./locale
+
+for po in `find . -mindepth 1 -maxdepth 1 -type d`; do
+    b=`basename $po`
 
     msgfmt.py -o $b/LC_MESSAGES/xyzcmd.mo \
 	./$b/LC_MESSAGES/xyzcmd.po;

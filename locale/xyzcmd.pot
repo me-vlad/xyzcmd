@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-09-19 02:01+EEST\n"
+"POT-Creation-Date: 2011-02-21 01:45+EET\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -143,67 +143,71 @@ msgstr ""
 msgid "DSL Error: %s"
 msgstr ""
 
-#: ./libxyz/core/dsl.py:240 ./libxyz/core/plugins/manager.py:109
+#: ./libxyz/core/dsl.py:241 ./libxyz/core/plugins/manager.py:115
 msgid "Unable to load plugin %s: %s"
 msgstr ""
 
-#: ./libxyz/core/dsl.py:255
+#: ./libxyz/core/dsl.py:257
+msgid "Unable to unload plugin %s: %s"
+msgstr ""
+
+#: ./libxyz/core/dsl.py:272
 msgid "Unable to bind shortcut %s: %s"
 msgstr ""
 
-#: ./libxyz/core/dsl.py:284
+#: ./libxyz/core/dsl.py:301
 msgid "Unable to execute file: %s"
 msgstr ""
 
-#: ./libxyz/core/dsl.py:301
+#: ./libxyz/core/dsl.py:318
 msgid "Unable to register action: %s"
 msgstr ""
 
-#: ./libxyz/core/dsl.py:328
+#: ./libxyz/core/dsl.py:345
 msgid "Unable to expand macro %s: %s"
 msgstr ""
 
-#: ./libxyz/core/dsl.py:347
+#: ./libxyz/core/dsl.py:364
 msgid "Unable to execute method %s: %s"
 msgstr ""
 
-#: ./libxyz/core/dsl.py:400
+#: ./libxyz/core/dsl.py:417
 msgid "Error in DSL shell execution: %s"
 msgstr ""
 
-#: ./libxyz/core/dsl.py:424
+#: ./libxyz/core/dsl.py:441
 msgid "Invalid object type: %s. Function expected"
 msgstr ""
 
-#: ./libxyz/core/dsl.py:466
+#: ./libxyz/core/dsl.py:483
 msgid "Invalid opts type: %s. Dict instance expected"
 msgstr ""
 
-#: ./libxyz/core/dsl.py:494
+#: ./libxyz/core/dsl.py:511
 msgid "Invalid function %s"
 msgstr ""
 
-#: ./libxyz/core/dsl.py:515
+#: ./libxyz/core/dsl.py:532
 msgid "Error setting VFS prefix: %s"
 msgstr ""
 
-#: ./libxyz/core/dsl.py:541
+#: ./libxyz/core/dsl.py:558
 msgid "Error registering new hook: %s"
 msgstr ""
 
-#: ./libxyz/core/dsl.py:566
+#: ./libxyz/core/dsl.py:583
 msgid "Error parsing FSRule: %s"
 msgstr ""
 
-#: ./libxyz/core/dsl.py:590
+#: ./libxyz/core/dsl.py:607
 msgid "Error creating Palette instance: %s"
 msgstr ""
 
-#: ./libxyz/core/dsl.py:604
+#: ./libxyz/core/dsl.py:621
 msgid "Error creating Skin instance: %s"
 msgstr ""
 
-#: ./libxyz/core/dsl.py:619
+#: ./libxyz/core/dsl.py:636
 msgid "Error in DSL execution: %s"
 msgstr ""
 
@@ -263,27 +267,27 @@ msgstr ""
 msgid "Error running callback procedure for event %s"
 msgstr ""
 
-#: ./libxyz/core/keymanager.py:81
+#: ./libxyz/core/keymanager.py:95
 msgid "Invalid shortcut type: %s."
 msgstr ""
 
-#: ./libxyz/core/keymanager.py:143
+#: ./libxyz/core/keymanager.py:157
 msgid "Method %s not loaded"
 msgstr ""
 
-#: ./libxyz/core/keymanager.py:149
+#: ./libxyz/core/keymanager.py:163
 msgid "Load error: %s"
 msgstr ""
 
-#: ./libxyz/core/keymanager.py:160
+#: ./libxyz/core/keymanager.py:174
 msgid "<Internal function object>"
 msgstr ""
 
-#: ./libxyz/core/keymanager.py:165
+#: ./libxyz/core/keymanager.py:179
 msgid "Invalid method type: %s. Must be string or function"
 msgstr ""
 
-#: ./libxyz/core/keymanager.py:175
+#: ./libxyz/core/keymanager.py:189
 msgid "Unable to bind method %s. Plugin %s doesn't export it."
 msgstr ""
 
@@ -295,35 +299,39 @@ msgstr ""
 msgid "Logger plugin"
 msgstr ""
 
-#: ./libxyz/core/plugins/base.py:89
+#: ./libxyz/core/plugins/base.py:99
 msgid "%s is not a public method"
 msgstr ""
 
-#: ./libxyz/core/plugins/base.py:101
+#: ./libxyz/core/plugins/base.py:111
 msgid "%s is not a public data object"
 msgstr ""
 
-#: ./libxyz/core/plugins/manager.py:88
+#: ./libxyz/core/plugins/base.py:193
+msgid "Unable to register palette %s: neither entry for current skin (%s) nor default one found"
+msgstr ""
+
+#: ./libxyz/core/plugins/manager.py:94
 msgid "Plugin %s is disabled or does not exist"
 msgstr ""
 
-#: ./libxyz/core/plugins/manager.py:115
+#: ./libxyz/core/plugins/manager.py:121
 msgid "Unable to find required %s class"
 msgstr ""
 
-#: ./libxyz/core/plugins/manager.py:170
+#: ./libxyz/core/plugins/manager.py:177
 msgid "%s plugin instance does not export method %s"
 msgstr ""
 
-#: ./libxyz/core/plugins/manager.py:195
+#: ./libxyz/core/plugins/manager.py:202
 msgid "%s plugin instance does not export data object %s"
 msgstr ""
 
-#: ./libxyz/core/plugins/manager.py:249
+#: ./libxyz/core/plugins/manager.py:256
 msgid "Error in wait_for() callback: %s"
 msgstr ""
 
-#: ./libxyz/core/plugins/manager.py:325
+#: ./libxyz/core/plugins/manager.py:332
 msgid "BasePlugin instance expected, got: %s"
 msgstr ""
 
@@ -339,41 +347,41 @@ msgstr ""
 msgid "Invalid skin argument: %s. libxyz.core.Skin instance expected!"
 msgstr ""
 
-#: ./libxyz/core/xyzdata.py:46
+#: ./libxyz/core/xyzdata.py:47
 msgid "Attribute %s is a constant"
 msgstr ""
 
-#: ./libxyz/launcher.py:210
+#: ./libxyz/launcher.py:212
 msgid ""
 "Invalid value %s.\n"
 "A list of valid log levels expected"
 msgstr ""
 
-#: ./libxyz/launcher.py:223
+#: ./libxyz/launcher.py:225
 msgid "Invalid value %s. A positive integer expected"
 msgstr ""
 
-#: ./libxyz/launcher.py:250
+#: ./libxyz/launcher.py:252
 msgid "Skin %s is not usable with requested color settings. Using default."
 msgstr ""
 
-#: ./libxyz/launcher.py:311
+#: ./libxyz/launcher.py:313
 msgid "Error parsing system config %s: %s"
 msgstr ""
 
-#: ./libxyz/launcher.py:315
+#: ./libxyz/launcher.py:317
 msgid "Error parsing user config %s: %s"
 msgstr ""
 
-#: ./libxyz/launcher.py:337
+#: ./libxyz/launcher.py:339
 msgid "Skipping skin %s due to parsing error: %s"
 msgstr ""
 
-#: ./libxyz/launcher.py:348
+#: ./libxyz/launcher.py:350
 msgid "Error parsing config %s: %s"
 msgstr ""
 
-#: ./libxyz/launcher.py:367
+#: ./libxyz/launcher.py:369
 msgid ""
 "%s version %s\n"
 "Usage: %s [-d driver][-c colors][-s skin][-lvh]\n"
@@ -385,7 +393,7 @@ msgid ""
 "    -h  -- Show this help message"
 msgstr ""
 
-#: ./libxyz/launcher.py:385
+#: ./libxyz/launcher.py:387
 msgid "%s version %s"
 msgstr ""
 
@@ -506,23 +514,23 @@ msgid ""
 "prompt - Command line prompt. Default - '$ '"
 msgstr ""
 
-#: ./libxyz/ui/cmd.py:615
+#: ./libxyz/ui/cmd.py:619
 msgid "Unable to execute commands on non-local filesystems"
 msgstr ""
 
-#: ./libxyz/ui/cmd.py:637
+#: ./libxyz/ui/cmd.py:641
 msgid "Error executing internal command %s: %s"
 msgstr ""
 
-#: ./libxyz/ui/cmd.py:673
+#: ./libxyz/ui/cmd.py:677
 msgid "Invalid alias type: %s"
 msgstr ""
 
-#: ./libxyz/ui/cmd.py:681
+#: ./libxyz/ui/cmd.py:685
 msgid "Unable to replace an alias %s: %s"
 msgstr ""
 
-#: ./libxyz/ui/cmd.py:780
+#: ./libxyz/ui/cmd.py:784
 msgid "History"
 msgstr ""
 
@@ -968,6 +976,35 @@ msgstr ""
 
 #: ./plugins/ui/testinput/main.py:56
 msgid "Input test"
+msgstr ""
+
+#: ./plugins/ui/vixyz/main.py:17
+msgid "Vi-like navigation mode"
+msgstr ""
+
+#: ./plugins/ui/vixyz/main.py:18
+msgid ""
+msgstr ""
+
+#: ./plugins/ui/vixyz/main.py:21
+msgid ""
+"Available commands:\n"
+"j - move cursor one entry down\n"
+"k - move cursor one entry up\n"
+"l - perform an action on selected object\n"
+"h - step to the parent directory\n"
+"gg - move to the first entry\n"
+"G - move to the last entry\n"
+"Ctrl-G - show VFS object information\n"
+"m[a-z][A-Z][0-9] - set a mark to the current file\n"
+"'[a-z][A-Z][0-9] - jump to the marked file\n"
+"/ - search for object\n"
+"? - search for object backwards\n"
+"dd - remove object\n"
+"yy - copy object\n"
+"t - toggle tag\n"
+"i, I - switch to insert mode\n"
+"ESC - switch to command command mode"
 msgstr ""
 
 #: ./plugins/vfs/fileinfo/main.py:18
